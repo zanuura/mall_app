@@ -1,3 +1,3 @@
-# mall_mobile_test
+# Mall APP
 
 A new Flutter project.
