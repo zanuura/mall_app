@@ -7,13 +7,14 @@ A clean Flutter mobile application with modular architecture (BLoC + Clean Code)
 
 Berikut tampilan aplikasi berdasarkan file yang ada di folder **app_screenshoot**:
 
-<p align="center">
+<p align="left">
+  <img src="app_screenshoot/Screenshot_1764171511.png" width="260" />
   <img src="app_screenshoot/Screenshot_1764171179.png" width="260" />
   <img src="app_screenshoot/Screenshot_1764171186.png" width="260" />
   <img src="app_screenshoot/Screenshot_1764171191.png" width="260" />
 </p>
 
-<p align="center">
+<p align="left">
   <img src="app_screenshoot/Screenshot_1764171203.png" width="260" />
   <img src="app_screenshoot/Screenshot_1764171208.png" width="260" />
   <img src="app_screenshoot/Screenshot_1764171211.png" width="260" />
