@@ -9,14 +9,12 @@ import 'package:mall_mobile_test/core/constants/app_assets.dart';
 import 'package:mall_mobile_test/core/constants/app_colors.dart';
 import 'package:mall_mobile_test/core/constants/app_text_styles.dart';
 import 'package:mall_mobile_test/core/widgets/buttons/icon_circle_buttons.dart';
-import 'package:mall_mobile_test/core/widgets/buttons/primary_button.dart';
 import 'package:mall_mobile_test/core/widgets/cards/product_card.dart';
 import 'package:mall_mobile_test/features/home/domain/entities/location_entity.dart';
 import 'package:mall_mobile_test/features/home/presentation/bloc/home_bloc.dart';
 import 'package:mall_mobile_test/features/home/presentation/bloc/home_state.dart';
 import 'package:mall_mobile_test/features/home/presentation/widgets/location_section.dart';
 import 'package:mall_mobile_test/features/mall/data/models/product_models.dart';
-import 'package:mall_mobile_test/features/mall/presentation/bloc/mall_state.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -421,9 +419,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // Custom button for home screen, assuming it's a simple Image.asset for now
   Widget _homePillButton(String asset) {
-    // In real app, this would be a PrimaryButton or similar
     return Expanded(flex: 3, child: Image.asset(asset, fit: BoxFit.cover));
   }
 
@@ -474,9 +470,6 @@ class _HomePageState extends State<HomePage> {
         child: Stack(
           clipBehavior: Clip.none,
           children: [
-            // =========================
-            // MAIN LIST WITH SCROLLBAR
-            // =========================
             Positioned.fill(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -510,21 +503,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-
-                  // =========================
-                  // SCROLLBAR TRACK BOTTOM
-                  // =========================
-                  // Padding(
-                  //   padding: const EdgeInsets.only(left: 24, right: 24),
-                  //   child: Container(height: 2, color: AppColors.lightGrey),
-                  // ),
                 ],
               ),
             ),
 
-            // =========================
-            // LEFT OVERLAY LOGO
-            // =========================
             Positioned(
               // left: 24,
               top: -10,
@@ -660,7 +642,6 @@ class _HomePageState extends State<HomePage> {
           child: Image.asset(AppAssets.imgTrendingDiscoveries),
         ),
 
-        // MASONRY GRID VIEW (DIBUNGKUS DENGAN PADDING)
         Container(
           padding: const EdgeInsets.fromLTRB(24, 0, 24, 50),
           decoration: BoxDecoration(color: AppColors.darkGreen),

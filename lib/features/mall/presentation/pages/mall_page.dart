@@ -7,7 +7,6 @@ import 'package:mall_mobile_test/core/constants/app_assets.dart';
 import 'package:mall_mobile_test/core/constants/app_colors.dart';
 import 'package:mall_mobile_test/core/constants/app_text_styles.dart';
 import 'package:mall_mobile_test/core/widgets/cards/product_card.dart';
-import 'package:mall_mobile_test/features/mall/data/models/product_models.dart';
 import 'package:mall_mobile_test/features/mall/presentation/bloc/mall_bloc.dart';
 import 'package:mall_mobile_test/features/mall/presentation/bloc/mall_event.dart';
 import 'package:mall_mobile_test/features/mall/presentation/bloc/mall_state.dart';
@@ -164,7 +163,6 @@ class _MallPageState extends State<MallPage> {
           }
 
           if (state is MallError) {
-            // Tampilkan daftar produk lama jika ada error saat memuat/filter/search baru
             if (state.products.isNotEmpty) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
